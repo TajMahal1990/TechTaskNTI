@@ -26,7 +26,7 @@ class ClientViewModel : ViewModel() {
             clientRepository.startTracking(serverIp, serverPort, frequency)
         }
     }
-
+//
     fun stopTracking() {
         viewModelScope.launch {
             clientRepository.stopTracking()
